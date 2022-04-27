@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Tools For Daily－ A Free Online Tool Website Random Number Generator　Our Random Number Generator can create a large amount of random numbers that the users want instantly.">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../styles/lifehack.css">
+  <link rel="stylesheet" href="../../styles/numbers/randomnumbers.css">
+  <link rel="icon" href="../../icon.png">
+  <style>
+    body{
+        padding-top: 80px;
+      }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <title>Random Number Generator</title>
+</head>
+<body>
+  <div class="wrapper">
+    <nav id='selections' class="navbar navbar-expand-lg navbar-light navbar-expand-lg fixed-top  " style="background-color: #B4B1F0;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../">Tools For Daily</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#TableofContent" aria-controls="TableofContent" aria-expanded="false" aria-label="Table of Content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="TableofContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="home" href="../">Homepage</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="unitConverter" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Unit Converters
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="unitConverter">
+              <li><a class="dropdown-item" href="../converter/temperature.html">Temperature Unit Converter</a></li>
+              <li><a class="dropdown-item" href="../converter/length.html">Length Unit Converter</a></li>
+              <li><a class="dropdown-item" href="../converter/weight.html">Weight Unit Converter</a></li>
+              <li><a class="dropdown-item" href="../converter/capacity.html">Capacity Unit Converter</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="calculator" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Calculators
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="calculator">
+                <li><a class="dropdown-item" href="../calculator/BMI.html">BMI Calculators</a></li>
+                <li><a class="dropdown-item" href="../calculator/percentage.html">Percentage Calculators</a></li>
+              </ul>
+            </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="randomizer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Number Generators and Number Game
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="randomizer">
+                  <li><a class="dropdown-item" href="../numbers/guessnumber.html">Number Guessing</a></li>
+                  <li><a class="dropdown-item" href="../numbers/randomnumbers.html">Random Number Generator</a></li>
+                  <li><a class="dropdown-item" href="../numbers/drawingstraws.html">Drawing Straws</a></li>
+                </ul>
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="Zodiac and Fourtune" href="../others/passwordgenerator.html">Random Password Generator</a>
+              </li>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+     <div class="col-lg-2 col-md-12 order-lg-1 order-md-3 order-sm-3 order-3 text-center" style="height: auto !important;">
+      <div id="section_box">
+       <div class="card" style="width: 100%;">
+         <div  class="card-header" style='background-color: #B4B1F0; '>
+           List of Number Generators and Number Game
+         </div>
+         <ul class="list-group list-group-flush">
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../numbers/guessnumber.html">Number Guessing</a></li>
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../numbers/randomnumbers.html">Random Number Generator</a></li>
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../numbers/drawingstraws.html">Drawing Straws</a></li>
+         </ul>
+       </div>
+      </div>
+      </div>
+
+     <div class="col-lg-8 col-md-10 order-lg-2 order-md-1 text-center" style="height: auto !important;">
+        <h1 class="title_size">Random Number Generator</h2>
+        <!-- <h2 class="subtitle_size"></h2> -->
+        <div class="container pt-3">
+          <div class="card">
+            <h2 class="card-header">Instructions:</h5>
+            <div class="card-body">
+              <h5 class="card-title">Choose to numbers as the range.</h5>
+              <p></p>
+              <h5 class="card-title">Then, enter how many numbers you want to generate down below. The system will randomly generate the numbers.</h5>
+              <p></p>
+              <h5 class="card-title">Press the 'Start' button to generate the numbers.</h5>
+              <p></p>
+            </div>
+          </div>
+          </div>
+
+
+      <div class="container-fluid pt-4 pb-4">
+        <form  style="background-color: #B4B1F0;">
+            <h1 class="title_size" style="background-color: #d0ed42;">Random Number Generator</h2>
+              <div class="row d-flex justify-content-center">
+                <div class="col-8">
+                    <p id="quiz_inroduction" class="h3 text-center"></p>
+                    <p  id="range_of_answer"  class="h3 text-center"></p>
+                    <p  id="answer"  class="h3 text-center"></p>
+                </div>
+              </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-md-7 col-sm-7 col-8">
+                <div class="input-group mb-3">
+                  <input id="min" type="number" class="form-control" aria-label="minimum number" placeholder="Please enter the minimum number.">
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-7 col-sm-7 col-8">
+                <div class="input-group mb-3">
+                  <input id="max" type="number" class="form-control" aria-label="maximum number" placeholder="Please enter the maximum number.">
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-8">
+                <div class="input-group mb-3">
+                  <input id="choose_num" type="number" class="form-control" aria-label="choose number" placeholder="How many numbers would you want to generate">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+              <button type="button"  onclick="random_number()" class="btn btn-primary mb-3" style="background-color: #c6db23; color:black; border:black 1px solid;">Start</button>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-6 ">
+                <h2 class="subtitle_size">The result:</h2>
+                <textarea id="result"  class="form-control" placeholder="The result shows here" id="result" style="height: 300px"></textarea>
+              </div>
+            </div>
+            <div class="col text-center pt-3 pb-3">
+            <div class="row">
+            <div class="col">
+              <input class="btn btn-primary mb-2" type="reset" value="Reset" style="background-color: #ed6258; color:black; border:black 1px solid;">
+            </div>
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-2 col-md-2 order-lg-3 order-md-2 d-sm-none d-md-block d-none d-sm-block text-center" style="height: auto !important;">
+
+  </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <hr>
+    <footer>
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center py-3"><a href="../privacypolicy_disclaimer.html">Privacy Policy and Disclamer</a></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center py-3"><a href="../contactus.html">Contact Us</a></div>
+          <div class="col-lg-4 col-md-12 col-sm-12 text-center py-3 align-items-center">
+            <div class="btn-group dropend">
+              <button type="button" class="btn btn-secondary dropdown-toggle" style="background-color: #efe4b0; color:black;  " data-bs-toggle="dropdown" aria-expanded="false">
+                Language
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="../../zh-Hant/numbers/randomnumbers.html">繁體中文</a></li>
+                <li><a href="../../zh-Hans/numbers/randomnumbers.html">简体中文</a></li>
+                <li><a href="numbers/randomnumbers.html">English</a></li>
+                <!-- <li><a href="">Bahasa Indonesia</a></li> -->
+              </ul>
+          </div>
+        </div>
+        <div class="col-12 text-center">© Copyright Tools for Daily</div>
+      </div>
+
+    </footer>
+    <script src="../jsforpages/number/random_number.js"></script>
+    <script src="../../js/bootstrap.bundle.js"></script>
+</body>
+</html>

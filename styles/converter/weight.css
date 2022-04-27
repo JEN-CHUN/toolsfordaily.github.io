@@ -1,0 +1,40 @@
+@media (max-width: 576px) {
+  .title_size{
+    font-size: 24px;
+  }
+  .subtitle_size{
+    font-size: 20px;
+  }
+  .degree_title{
+    font-size:18px;
+  }
+}
+
+@media (min-width: 576px) {
+  /* .title_size{
+    font-size: 24px;
+  }
+  .subtitle_size{
+    font-size: 20px;
+  } */
+.common_question{
+    font-size:30px;
+  }
+}
+
+.card-header{
+  background-color: #B4B1F0 ;
+}
+
+.card-body{
+  background-color: #d0ed42;
+}
+
+table th,tr,td{
+  border: 1px black solid;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}

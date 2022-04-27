@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="日常工具网－线上免费工具整合网站 长度单位换算 公制 英制 公里 公尺 公寸 公分 公厘 英吋 英呎 码">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../styles/lifehack.css">
+  <link rel="stylesheet" href="../../styles/converter/length.css">
+  <link rel="icon" href="../../icon.png">
+  <style>
+    body{
+        padding-top: 80px;
+      }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <title>长度单位换算  | 日常工具网</title>
+</head>
+
+<div class="warpper">
+<nav id='selections' class="navbar navbar-expand-lg navbar-light navbar-expand-lg fixed-top  " style="background-color: #B4B1F0;">
+<div class="container-fluid">
+  <a class="navbar-brand" href="../">日常工具网</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#TableofContent" aria-controls="TableofContent" aria-expanded="false" aria-label="Table of Content">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="TableofContent">
+    <ul class="navbar-nav ">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="home" href="../">首页</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="unitConverter" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          单位换算
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="unitConverter">
+          <li><a class="dropdown-item" href="../converter/temperature.html">温度单位换算</a></li>
+          <li><a class="dropdown-item" href="../converter/length.html">长度单位换算</a></li>
+          <li><a class="dropdown-item" href="../converter/weight.html">重量单位换算</a></li>
+          <li><a class="dropdown-item" href="../converter/capacity.html">容积单位换算</a></li>
+        </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="calculator" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            各式计算器
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="calculator">
+            <li><a class="dropdown-item" href="../calculator/BMI.html">BMI计算器</a></li>
+            <li><a class="dropdown-item" href="../calculator/percentage.html">百分比计算器</a></li>
+            <!-- <li><a class="dropdown-item" href="#">基礎代謝率計算器</a></li> -->
+            <!-- <li><a class="dropdown-item" href="#">每日建議飲水量計算器</a></li> -->
+          </ul>
+        </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="randomizer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              各式随机生成器与数字游戏
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="randomizer">
+              <li><a class="dropdown-item" href="../numbers/guessnumber.html">终极密码</a></li>
+              <li><a class="dropdown-item" href="../numbers/randomnumbers.html">随机数字</a></li>
+              <li><a class="dropdown-item" href="../numbers/drawingstraws.html">乱数抽签</a></li>
+            </ul>
+            </li>
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="Zodiac and Fourtune" href="../others/passwordgenerator.html">随机密码生成器</a>
+          </li>
+
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+  <div class="container-fluid">
+    <div class="row">
+     <div class="col-lg-2 col-md-12 order-lg-1 order-md-3 order-sm-3 order-3 text-center" style="height: auto !important;">
+      <div id="section_box">
+       <div class="card" style="width: 100%;">
+         <div  class="card-header" style='background-color: #B4B1F0; '>
+           单位换算列表
+         </div>
+         <ul class="list-group list-group-flush">
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../converter/temperature.html">温度单位换算</a></li>
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../converter/length.html">长度单位换算</a></li>
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../converter/weight.html">重量单位换算</a></li>
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../converter/capacity.html">容积单位换算</a></li>
+         </ul>
+       </div>
+      </div>
+      </div>
+
+     <div class="col-lg-8 col-md-10 order-lg-2 order-md-1 text-center" style="height: auto !important;">
+        <h1 class="title_size">长度单位换算</h2>
+        <h2 class="subtitle_size">公制 英制</h2>
+        <div class="container pt-3">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">公里</span>
+                </div>
+                <input id="kilometer" type="number" class="form-control" placeholder="请输入数字" aria-label="kilometer" aria-describedby="kilometer" onkeyup="kilometer_to_other()">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">公尺</span>
+                </div>
+                <input id="meter" type="number" class="form-control" placeholder="请输入数字" aria-label="meter" aria-describedby="meter" onkeyup="meter_to_other()">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">公寸</span>
+                </div>
+                <input id="decimeter" type="number" class="form-control" placeholder="请输入数字" aria-label="decimeter" aria-describedby="decimeter" onkeyup="decimeter_to_other()">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">公分</span>
+                </div>
+                <input id="centimeter" type="number" class="form-control" placeholder="请输入数字" aria-label="centimeter" aria-describedby="centimeter" onkeyup="centimeter_to_other()">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">公厘</span>
+                </div>
+                <input id="millimeter" type="number" class="form-control" placeholder="请输入数字" aria-label="millimeter" aria-describedby="millimeter" onkeyup="millimeter_to_other()">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">英吋</span>
+                </div>
+                <input id="inch" type="number" class="form-control" placeholder="请输入数字" aria-label="inch" aria-describedby="inch" onkeyup="inch_to_other()">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">英尺</span>
+                </div>
+                <input id="foot" type="number" class="form-control" placeholder="请输入数字" aria-label="foot" aria-describedby="foot" onkeyup="foot_to_other()">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">码</span>
+                </div>
+                <input id="yard" type="number" class="form-control" placeholder="请输入数字" aria-label="yard" aria-describedby="yard" onkeyup="yard_to_other()">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="container-fluid">
+
+        <h3 class="degree_title">长度对照表</h3>
+        <div class="table-responsive">
+          <table class="table" style="border:black 1px solid; background-color:#B4B1F0;">
+            <thead>
+              <tr style="background-color: #c6db23;">
+                <th scope="col" style="background-color: #B4B1F0"></th>
+                <th scope="col">公里</th>
+                <th scope="col">公尺</th>
+                <th scope="col">公寸</th>
+                <th scope="col">公分</th>
+                <th scope="col">公厘</th>
+                <th scope="col">英吋</th>
+                <th scope="col">英尺</th>
+                <th scope="col">码</th>
+              </tr>
+            <tbody>
+             <tr>
+               <th scope="row" style="background-color: #c6db23;">公里</th>
+               <td style="background-color: #fffb00">1</td>
+               <td>1000</td>
+               <td>10000</td>
+               <td>100000</td>
+               <td>1000000</td>
+               <td>39370.1</td>
+               <td>3280.84</td>
+               <td>1093.61</td>
+             </tr>
+             <tr>
+               <th scope="row" style="background-color: #c6db23;">公尺</th>
+               <td>0.001</td>
+               <td style="background-color: #fffb00">1</td>
+               <td>10</td>
+               <td>100</td>
+               <td>10000</td>
+               <td>39.3701</td>
+               <td>3.28084</td>
+               <td>1.09361</td>
+             </tr>
+             <tr>
+               <th scope="row" style="background-color: #c6db23;">公寸</th>
+               <td>0.0001</td>
+               <td>0.1</td>
+               <td style="background-color: #fffb00">1</td>
+               <td>10</td>
+               <td>100</td>
+               <td>3.9370079</td>
+               <td>0.328084</td>
+               <td>0.1093613</td>
+             </tr>
+             <tr>
+               <th scope="row" style="background-color: #c6db23;">公分</th>
+               <td>0.00001</td>
+               <td>0.01</td>
+               <td>0.1</td>
+               <td style="background-color: #fffb00">1</td>
+               <td>10</td>
+               <td>0.3937008</td>
+               <td>0.0328084</td>
+               <td>0.0109361</td>
+             </tr>
+             <tr>
+               <th scope="row" style="background-color: #c6db23;">公厘</th>
+               <td>0.000001</td>
+               <td>0.001</td>
+               <td>0.01</td>
+               <td>0.1</td>
+               <td style="background-color: #fffb00">1</td>
+               <td>0.0393701</td>
+               <td>0.0032808</td>
+               <td>0.0010936</td>
+             </tr>
+             <tr>
+               <th scope="row" style="background-color: #c6db23;">英吋</th>
+               <td>0.0000254</td>
+               <td>0.0254</td>
+               <td>0.254</td>
+               <td>2.54</td>
+               <td>25.4</td>
+               <td style="background-color: #fffb00">1</td>
+               <td>0.0833333</td>
+               <td>0.0277778</td>
+             </tr>
+             <tr>
+               <th scope="row" style="background-color: #c6db23;">英尺</th>
+               <td>0.0003048</td>
+               <td>0.3048</td>
+               <td>3.048</td>
+               <td>30.48</td>
+               <td>304.8</td>
+               <td>12</td>
+               <td style="background-color: #fffb00">1</td>
+               <td>0.3333333</td>
+             </tr>
+             <tr>
+               <th scope="row" style="background-color: #c6db23;">码</th>
+               <td>0.0009144</td>
+               <td>0.9144</td>
+               <td>9.144</td>
+               <td>91.44</td>
+               <td>914.4</td>
+               <td>36</td>
+               <td>3</td>
+               <td style="background-color: #fffb00">1</td>
+             </tr>
+           </tbody>
+            </thead>
+          </table>
+        </div>
+      </div>
+
+
+    <div class="container-fluid pb-4">
+      <h3 class="common_question">长度单位的常见问题</h3>
+      <div class="card">
+        <h5 class="card-header">问题：公制单位怎么换算？</h5>
+        <div class="card-body">
+          <h5 class="card-title">答案：一公里 等于 1000 公尺 等于 10000公寸 等于 100000公分 等于 1000000公厘</h5>
+        </div>
+      </div>
+      <p></p>
+      <div class="card">
+        <h5 class="card-header">问题：英制单位怎么换算？</h5>
+        <div class="card-body">
+          <h5 class="card-title">答案：一码 等于 3英尺 等于 36英吋 等于 0.9144公尺</h5>
+        </div>
+      </div>
+      <p></p>
+      <div class="card">
+        <h5 class="card-header">问题：一公里等于几公尺？</h5>
+        <div class="card-body">
+          <h5 class="card-title">答案：一公里 等于 1000公尺</h5>
+        </div>
+      </div>
+      <p></p>
+      <div class="card">
+        <h5 class="card-header">问题：一公尺等于几公寸？</h5>
+        <div class="card-body">
+          <h5 class="card-title">答案：一公尺 等于 10公寸</h5>
+        </div>
+      </div>
+      <p></p>
+      <div class="card">
+        <h5 class="card-header">问题：一公寸等于几公分？</h5>
+        <div class="card-body">
+          <h5 class="card-title">答案：一公寸 等于 10公分</h5>
+        </div>
+      </div>
+      <p></p>
+      <div class="card">
+        <h5 class="card-header">问题：一公分等于几公厘？</h5>
+        <div class="card-body">
+          <h5 class="card-title">答案：一公分 等于 10公厘</h5>
+        </div>
+      </div>
+      <p></p>
+      <div class="card">
+        <h5 class="card-header">问题:一码等于几英尺？</h5>
+        <div class="card-body">
+          <h5 class="card-title">答案：一码 等于 3英尺</h5>
+        </div>
+      </div>
+      <p></p>
+      <div class="card">
+        <h5 class="card-header">问题：一英尺等于几英吋？</h5>
+        <div class="card-body">
+          <h5 class="card-title">答案：一英尺 等于 12英吋</h5>
+        </div>
+      </div>
+      <p></p>
+      <div class="card">
+        <h5 class="card-header">问题：一英吋等于几公分？</h5>
+        <div class="card-body">
+          <h5 class="card-title">答案：一英吋 等于 2.54公分</h5>
+        </div>
+      </div>
+    </div>
+
+      </div>
+        <div class="col-lg-2 col-md-2 order-lg-3 order-md-2  text-center" style="height: auto !important;">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+    <hr>
+    <footer>
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center py-3"><a href="../privacypolicy_disclaimer.html">隐私权政策与免责声明</a></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center py-3"><a href="../contactus.html">联络我们</a></div>
+          <div class="col-lg-4 col-md-12 col-sm-12 text-center py-3 align-items-center">
+            <div class="btn-group dropend">
+              <button type="button" class="btn btn-secondary dropdown-toggle" style="background-color: #efe4b0; color:black;  " data-bs-toggle="dropdown" aria-expanded="false">
+                选择语言
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="../../zh-Hant/converter/length.html">繁體中文</a></li>
+                <li><a href="length.html">简体中文</a></li>
+                <li><a href="../../en/converter/length.html">English</a></li>
+                <!-- <li><a href="">Bahasa Indonesia</a></li> -->
+              </ul>
+          </div>
+        </div>
+        <div class="col-12 text-center">© Copyright Tools for Daily</div>
+      </div>
+
+    </footer>
+  <script src="../jsforpages/converter/length.js"></script>
+  <script src="../../js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="日常工具网－线上免费工具整合网站 百分比计算器 输入数字，立刻计算出精确的百分比">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../styles/lifehack.css">
+  <link rel="stylesheet" href="../../styles/calculator/percentage.css">
+  <link rel="icon" href="../../icon.png">
+  <style>
+    body{
+        padding-top: 80px;
+      }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <title>百分比计算器  | 日常工具网</title>
+</head>
+<body>
+  <div class="wrapper">
+    <nav id='selections' class="navbar navbar-expand-lg navbar-light navbar-expand-lg fixed-top  " style="background-color: #B4B1F0;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../">日常工具网</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#TableofContent" aria-controls="TableofContent" aria-expanded="false" aria-label="Table of Content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="TableofContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="home" href="../">首页</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="unitConverter" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              单位换算
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="unitConverter">
+              <li><a class="dropdown-item" href="../converter/temperature.html">温度单位换算</a></li>
+              <li><a class="dropdown-item" href="../converter/length.html">长度单位换算</a></li>
+              <li><a class="dropdown-item" href="../converter/weight.html">重量单位换算</a></li>
+              <li><a class="dropdown-item" href="../converter/capacity.html">容积单位换算</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="calculator" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                各式计算器
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="calculator">
+                <li><a class="dropdown-item" href="../calculator/BMI.html">BMI计算器</a></li>
+                <li><a class="dropdown-item" href="../calculator/percentage.html">百分比计算器</a></li>
+                <!-- <li><a class="dropdown-item" href="#">基礎代謝率計算器</a></li> -->
+                <!-- <li><a class="dropdown-item" href="#">每日建議飲水量計算器</a></li> -->
+              </ul>
+            </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="randomizer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  各式随机生成器与数字游戏
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="randomizer">
+                  <li><a class="dropdown-item" href="../numbers/guessnumber.html">终极密码</a></li>
+                  <li><a class="dropdown-item" href="../numbers/randomnumbers.html">随机数字</a></li>
+                  <li><a class="dropdown-item" href="../numbers/drawingstraws.html">乱数抽签</a></li>
+                </ul>
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="Zodiac and Fourtune" href="../others/passwordgenerator.html">随机密码生成器</a>
+              </li>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+
+
+    <div class="row">
+     <div class="col-lg-2 col-md-12 order-lg-1 order-md-3 order-sm-3 order-3 text-center" style="height: auto !important;">
+      <div id="section_box">
+       <div class="card" style="width: 100%;">
+         <div  class="card-header" style='background-color: #B4B1F0; '>
+           计算器列表
+         </div>
+         <ul class="list-group list-group-flush">
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../calculator/BMI.html">BMI计算器</a></li>
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../calculator/percentage.html">百分比计算器</a></li>
+         </ul>
+       </div>
+      </div>
+      </div>
+
+     <div class="col-lg-8 col-md-10 order-lg-2 order-md-1 text-center" style="height: auto !important;">
+       <p class='h1 text-center py-4'>百分比计算器</p>
+       <p class='h4 text-center px-4 py-3'>帮助您算出难以人脑计算的复杂数字的百分比</p>
+        <div class="container pt-3">
+          <form  style="background-color: #B4B1F0;">
+          <h1 class="title_size" style="background-color: #d0ed42;">百分比计算器</h2>
+          <h3 class="subtitle_size">将想计算的数字输入下方表格即可算出百分比</h3>
+          <div class="row d-flex justify-content-center">
+            <div class="col-8">
+              <div class="input-group mb-3">
+                <input id="number_want_count" type="number" class="form-control" aria-label="number_want_count" placeholder="请输入您想计算的分子">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <h3>%</h3>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-8">
+              <div class="input-group mb-3">
+                <input id="total" type="number" class="form-control" aria-label="total" placeholder="请输入您的分母">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <h3>=</h3>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-8">
+              <div class="input-group mb-3 d-flex justify-content-center">
+                <h3 id="percentage_count"></h3>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+          <div class="col">
+            <button id="count_button" onclick="percentage_number()" type="button" class="btn btn-primary mb-2" style="background-color: #c6db23; color:black; border:black 1px solid;">计算百分比</button>
+          </div>
+        </div>
+      </form>
+      </div>
+
+
+    <div class="container-fluid pb-4 pt-4">
+      <h3 class="common_question">百分比的计算公式</h3>
+      <div class="card">
+        <h5 class="card-header">百分比的计算公式为何？</h5>
+        <div class="card-body">
+          <h5 class="card-title">答案：百分比的计算公式是 (分子/分母)*100</h5>
+        </dv>
+      </div>
+    </div>
+</div>
+
+      </div>
+        <div class="col-lg-2 col-md-2 order-lg-3 order-md-2  text-center" style="height: auto !important;">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <hr>
+    <footer>
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center py-3"><a href="../privacypolicy_disclaimer.html">隐私权政策与免责声明</a></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center py-3"><a href="../contactus.html">联络我们</a></div>
+          <div class="col-lg-4 col-md-12 col-sm-12 text-center py-3 align-items-center">
+            <div class="btn-group dropend">
+              <button type="button" class="btn btn-secondary dropdown-toggle" style="background-color: #efe4b0; color:black;  " data-bs-toggle="dropdown" aria-expanded="false">
+                选择语言
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="../../zh-Hant/calculator/percentage.html">繁體中文</a></li>
+                <li><a href="percentage.html">简体中文</a></li>
+                <li><a href="../../en/calculator/percentage.html">English</a></li>
+                <!-- <li><a href="">Bahasa Indonesia</a></li> -->
+              </ul>
+          </div>
+        </div>
+        <div class="col-12 text-center">© Copyright Tools for Daily</div>
+      </div>
+
+    </footer>
+    <script src="../jsforpages/calculator/percentage.js"></script>
+    <script src="../../js/bootstrap.bundle.js"></script>
+</body>
+</html>

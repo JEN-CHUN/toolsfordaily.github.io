@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="日常工具网－线上免费工具整合网站 随机抽签 意见有分歧吗? 上课抽签点名? 不知道今天晚上要吃什么吗? 不知道要做什么决定? 那就用抽签来解决吧!">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../styles/lifehack.css">
+  <link rel="stylesheet" href="../../styles/numbers/drawingstraws.css">
+  <link rel="icon" href="../../icon.png">
+  <style>
+    body{
+        padding-top: 80px;
+      }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <title>随机抽签  | 日常工具网</title>
+</head>
+<body>
+  <div class="wrapper">
+    <nav id='selections' class="navbar navbar-expand-lg navbar-light navbar-expand-lg fixed-top  " style="background-color: #B4B1F0;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../">日常工具网</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#TableofContent" aria-controls="TableofContent" aria-expanded="false" aria-label="Table of Content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="TableofContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="home" href="../">首页</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="unitConverter" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              单位换算
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="unitConverter">
+              <li><a class="dropdown-item" href="../converter/temperature.html">温度单位换算</a></li>
+              <li><a class="dropdown-item" href="../converter/length.html">长度单位换算</a></li>
+              <li><a class="dropdown-item" href="../converter/weight.html">重量单位换算</a></li>
+              <li><a class="dropdown-item" href="../converter/capacity.html">容积单位换算</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="calculator" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                各式计算器
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="calculator">
+                <li><a class="dropdown-item" href="../calculator/BMI.html">BMI计算器</a></li>
+                <li><a class="dropdown-item" href="../calculator/percentage.html">百分比计算器</a></li>
+                <!-- <li><a class="dropdown-item" href="#">基礎代謝率計算器</a></li> -->
+                <!-- <li><a class="dropdown-item" href="#">每日建議飲水量計算器</a></li> -->
+              </ul>
+            </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="randomizer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  各式随机生成器与数字游戏
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="randomizer">
+                  <li><a class="dropdown-item" href="../numbers/guessnumber.html">终极密码</a></li>
+                  <li><a class="dropdown-item" href="../numbers/randomnumbers.html">随机数字</a></li>
+                  <li><a class="dropdown-item" href="../numbers/drawingstraws.html">乱数抽签</a></li>
+                </ul>
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="Zodiac and Fourtune" href="../others/passwordgenerator.html">随机密码生成器</a>
+              </li>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+     <div class="col-lg-2 col-md-12 order-lg-1 order-md-3 order-sm-3 order-3 text-center" style="height: auto !important;">
+      <div id="section_box">
+       <div class="card" style="width: 100%;">
+         <div  class="card-header" style='background-color: #B4B1F0; '>
+           各式抽签与数字游戏列表
+         </div>
+         <ul class="list-group list-group-flush">
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../numbers/guessnumber.html">终极密码</a></li>
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../numbers/randomnumbers.html">随机数字</a></li>
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../numbers/drawingstraws.html">乱数抽签</a></li>
+         </ul>
+       </div>
+      </div>
+      </div>
+
+     <div class="col-lg-8 col-md-10 order-lg-2 order-md-1 text-center" style="height: auto !important;">
+        <h1 class="title_size">随机抽签</h2>
+        <!-- <h2 class="subtitle_size"></h2> -->
+        <div class="container pt-3">
+            <div class="card">
+              <h2 class="card-header">使用说明：</h5>
+              <div class="card-body">
+                <h5 class="card-title">请在上方的文字方块打入想要随机选取的物件名称</h5>
+                <p></p>
+                <h5 class="card-title">(完成输入一个物件名称之后需换行)</h5>
+                <p></p>
+                <h5 class="card-title">请输入欲抽出之数目</h5>
+                <p></p>
+                <h5 class="card-title">请按下确认键之后即可完成抽签</h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+
+      <div class="container-fluid pt-4 pb-4">
+        <form id="draw_form"  style="background-color: #B4B1F0;">
+            <h1 class="title_size" style="background-color: #d0ed42;">随机抽签</h2>
+              <div class="row d-flex justify-content-center py-2">
+                <div class="col-9 ">
+                  <h2 id="random_title1" class="subtitle_size">请输入物件名称以及欲抽出之数目：</h2>
+                </div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-6">
+                  <textarea class="form-control" placeholder="请输入名称" id="list_name" style="height: 300px;"></textarea>
+                </div>
+              </div>
+
+            <div class="row d-flex justify-content-center pt-3">
+              <div class="col-8">
+                <div class="input-group mb-3">
+                  <input id="choose_num" type="number" step="1" min="0"  class="form-control" aria-label="choose number" placeholder="请输入要随机选出多少数">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+              <button id="start_button" onclick="drawing_straws()" type="button" class="btn btn-primary mb-3" style="background-color: #c6db23; color:black; border:black 1px solid;">确认数字</button>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-6 ">
+                <h2 id="random_title2" class="subtitle_size">乱数结果：</h2>
+                <textarea class="form-control" placeholder="结果将显示于此" id="drawing_list" style="height: 300px" disabled></textarea>
+              </div>
+            </div>
+            <div class="col text-center pt-3 pb-3">
+            <div class="row">
+            <div class="col">
+              <input class="btn btn-primary mb-2" type="reset" value="重新抽签" style="background-color: #ed6258; color:black; border:black 1px solid;">
+            </div>
+          </div>
+          </form>
+      </div>
+
+    </div>
+
+  </div>
+
+        <div class="col-lg-2 col-md-2 order-lg-3 order-md-2  text-center" style="height: auto !important;">
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <hr>
+    <footer>
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center py-3"><a href="../privacypolicy_disclaimer.html">隐私权政策与免责声明</a></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center py-3"><a href="../contactus.html">联络我们</a></div>
+          <div class="col-lg-4 col-md-12 col-sm-12 text-center py-3 align-items-center">
+            <div class="btn-group dropend">
+              <button type="button" class="btn btn-secondary dropdown-toggle" style="background-color: #efe4b0; color:black;  " data-bs-toggle="dropdown" aria-expanded="false">
+                选择语言
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="../../zh-Hant/numbers/drawingstraws.html">繁體中文</a></li>
+                <li><a href="drawingstraws.html">简体中文</a></li>
+                <li><a href="../../en/numbers/drawingstraws.html">English</a></li>
+                <!-- <li><a href="">Bahasa Indonesia</a></li> -->
+              </ul>
+          </div>
+        </div>
+        <div class="col-12 text-center">© Copyright Tools for Daily</div>
+      </div>
+
+    </footer>
+    <script src="../jsforpages/number/drawing_straws.js"></script>
+    <script src="../../js/bootstrap.bundle.js"></script>
+</body>
+</html>

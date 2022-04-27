@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="日常工具網－線上免費工具整合網站 終極密碼 值得一玩的童年遊戲">
+  <link rel="stylesheet" href="../../css/bootstrap.css">
+  <link rel="stylesheet" href="../../styles/lifehack.css">
+  <link rel="stylesheet" href="../../styles/numbers/guessnumber.css">
+  <link rel="icon" href="../../icon.png">
+  <style>
+    body{
+        padding-top: 80px;
+      }
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+  <title>終極密碼 | 日常工具網</title>
+</head>
+<body>
+  <div class="wrapper">
+    <nav id='selections' class="navbar navbar-expand-lg navbar-light navbar-expand-lg fixed-top  " style="background-color: #B4B1F0;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../">日常工具網</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#TableofContent" aria-controls="TableofContent" aria-expanded="false" aria-label="Table of Content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="TableofContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="home" href="../">首頁</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="unitConverter" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              單位換算
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="unitConverter">
+              <li><a class="dropdown-item" href="../converter/temperature.html">溫度單位換算</a></li>
+              <li><a class="dropdown-item" href="../converter/length.html">長度單位換算</a></li>
+              <li><a class="dropdown-item" href="../converter/weight.html">重量單位換算</a></li>
+              <li><a class="dropdown-item" href="../converter/capacity.html">容積單位換算</a></li>
+            </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="calculator" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                各式計算器
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="calculator">
+                <li><a class="dropdown-item" href="../calculator/BMI.html">BMI計算器</a></li>
+                <li><a class="dropdown-item" href="../calculator/percentage.html">百分比計算器</a></li>
+                <!-- <li><a class="dropdown-item" href="#">基礎代謝率計算器</a></li> -->
+                <!-- <li><a class="dropdown-item" href="#">每日建議飲水量計算器</a></li> -->
+              </ul>
+            </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="randomizer" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  各式抽籤與數字遊戲
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="randomizer">
+                  <li><a class="dropdown-item" href="../numbers/guessnumber.html">終極密碼</a></li>
+                  <li><a class="dropdown-item" href="../numbers/randomnumbers.html">隨機數字</a></li>
+                  <li><a class="dropdown-item" href="../numbers/drawingstraws.html">亂數抽籤</a></li>
+                </ul>
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="others" href="../others/passwordgenerator.html">隨機密碼生成器</a>
+              </li>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+
+<div class="warpper">
+  <div class="container-fluid">
+    <div class="row">
+     <div class="col-lg-2 col-md-12 order-lg-1 order-md-3 order-sm-3 order-3 text-center" style="height: auto !important;">
+      <div id="section_box">
+       <div class="card" style="width: 100%;">
+         <div  class="card-header" style='background-color: #B4B1F0; '>
+           各式抽籤與數字遊戲列表
+         </div>
+         <ul class="list-group list-group-flush">
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../numbers/guessnumber.html">終極密碼</a></li>
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../numbers/randomnumbers.html">隨機數字</a></li>
+           <li class="list-group-item" style="background-color: #e0cb67"><a href="../numbers/drawingstraws.html">亂數抽籤</a></li>
+         </ul>
+       </div>
+      </div>
+      </div>
+
+     <div class="col-lg-8 col-md-10 order-lg-2 order-md-1 text-center" style="height: auto !important;">
+        <h1 class="title_size">終極密碼</h2>
+        <h2 class="subtitle_size">值得與大家一起玩的童年遊戲</h2>
+        <div class="container pt-3">
+          <div class="card">
+            <h2 class="card-header">遊戲說明：</h5>
+            <div class="card-body">
+              <h5 class="card-title">選擇兩個數字作為範圍，系統會隨機產生一個數字。</h5>
+              <p></p>
+              <h5 class="card-title">請玩家於下方的作答欄位輸入數字，並按下確認鍵。為保證公正性，數字並不會顯示</h5>
+              <p></p>
+              <h5 class="card-title">玩家需猜測一個<strong>指定範圍</strong>內的數字。如果猜錯，範圍會隨著每次答題縮小。</h5>
+              <p></p>
+              <h5 class="card-title">當玩家猜到正確數字遊戲即結束。</h5>
+            </div>
+          </div>
+          </div>
+
+
+      <div class="container-fluid pt-4 pb-4">
+        <form  style="background-color: #B4B1F0;">
+            <h1 class="title_size" style="background-color: #d0ed42;">終極密碼</h2>
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-5 col-md-7 col-sm-7 col-8">
+                <div class="input-group mb-3">
+                  <input id="number_min" type="number" class="form-control" aria-label="number_want_count" placeholder="請輸入您想計算的最小數">
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-7 col-sm-7 col-8">
+                <div class="input-group mb-3">
+                  <input id="number_max" type="number" class="form-control" aria-label="number_want_count" placeholder="請輸入您想計算的最大數">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+              <button onclick="guess_number()" type="button" class="btn btn-primary mb-3" style="background-color: #c6db23; color:black; border:black 1px solid;">確認數字</button>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-10">
+                  <p id="min_warning" class="h5 text-center"></p>
+                  <p id="max_warning" class="h5 text-center"></p>
+                  <p id="quiz_introduction" class="h5 text-center"></p>
+                  <p  id="range_of_answer"  class="h5 text-center"></p>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-8">
+                <div class="input-group mb-3">
+                  <input id="check_num" type="number" class="form-control" aria-label="answer" placeholder="請輸入您的答案">
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="col-10">
+                  <p  id="answer"  class="h1 text-center"></p>
+              </div>
+            </div>
+            <div class="row">
+            <div class="col">
+              <button type="button" onclick="check_answer()" class="btn btn-primary mb-2" style="background-color: #c6db23; color:black; border:black 1px solid;">確認答案</button>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col">
+              <input class="btn btn-primary mb-2" type="reset" onclick="erase_all()" value="重新開始/清除現有題目" style="background-color: #ed6258; color:black; border:black 1px solid;">
+            </div>
+            </div>
+          </form>
+      </div>
+
+
+
+    </div>
+    <div class="col-lg-2 col-md-2 order-lg-3 order-md-2  text-center" style="height: auto !important;">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <hr>
+    <footer class="footer">
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center py-3"><a href="../privacypolicy_disclaimer.html">隱私權政策與免責聲明</a></div>
+          <div class="col-lg-4 col-md-6 col-sm-12 text-center py-3"><a href="../contactus.html">聯絡我們</a></div>
+          <div class="col-lg-4 col-md-12 col-sm-12 text-center py-3 align-items-center">
+            <div class="btn-group dropend">
+              <button type="button" class="btn btn-secondary dropdown-toggle" style="background-color: #efe4b0; color:black;  " data-bs-toggle="dropdown" aria-expanded="false">
+                選擇語言
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="guessnumber.html">繁體中文</a></li>
+                <li><a href="../../zh-Hans/numbers/guessnumber.html">简体中文</a></li>
+                <li><a href="../../en/numbers/guessnumber.html">English</a></li>
+                <!-- <li><a href="">Bahasa Indonesia</a></li> -->
+              </ul>
+          </div>
+        </div>
+        <div class="col-12 text-center">© Copyright Tools For Daily</div>
+      </div>
+
+    </footer>
+    <script src="../jsforpages/number/ultimate_number.js"></script>
+    <script src="../../js/bootstrap.bundle.js"></script>
+</body>
+</html>
